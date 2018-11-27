@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Patient information{% endblock %}
+
+{% block content %}
+            <div class="row info-body">
+                <h1>Information about new patient</h1>
+            <div class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-8 col-sm-push-2 col-xs-8 col-xs-push-2">
+                <form  action="" method="post" role="form">
+                {{ form.csrf }}
+                    <div class="form-group">
+                    <input type="text" placeholder="Name" name="name">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" placeholder="Gender" name="sex">
+                    </div>
+                    <div class="form-group">
+                    <input type="date" placeholder="Date of birth" name="date_birth">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" placeholder="Age" name="age">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" placeholder="Phone number" name="phone">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" placeholder="Adress" name="address">
+                    </div>
+                    <div class="col-lg-12 col-lg-push-4">
+                        <div class="form-group">
+                            <input type="submit" value="Create">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+{% endblock %}

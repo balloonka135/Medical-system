@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Medical Center{% endblock %}
+
+{% block content %}
+            <div class="info-body create row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1>Data added successfully!</h1>
+                </div>
+                <div class="col-lg-6 col-lg-push-5">
+                    <a href="{{ url_for('index') }}"><input type="submit" value="Back to main page"></a>
+                </div>
+            </div>
+{% endblock %}
